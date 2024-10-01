@@ -30,7 +30,7 @@ spec:
     - mountPath: /app
       name: app-pvc
   - name: db
-    image: docker.io/library/mariadb:11
+    image: mirror.gcr.io/mariadb:11
     env:
     - name: MARIADB_ROOT_PASSWORD
       value: db_root_password
