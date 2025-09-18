@@ -16,7 +16,7 @@ spec:
     image: flask
     ports:
     - containerPort: 5000
-      hostPort: 5000
+      hostPort: 5005
     env:
     - name: FLASK_APP
       value: app.py
