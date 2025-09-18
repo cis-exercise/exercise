@@ -6,6 +6,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
   apt update && apt-get --no-install-recommends install -y git
 COPY requirements.txt requirements.txt
 RUN pip install -U pip && pip install -r requirements.txt
+COPY pyproject.toml pyproject.toml
 
 WORKDIR /app
 CMD ["tail", "-f", "/dev/null"]
