@@ -4,5 +4,5 @@ line-length = 119
 
 [tool.ruff.lint]
 select = ["ALL"]
-ignore = ["ANN", "D", "INP", "RUF003", "S"]
+ignore = ["ANN", "CPY", "D", "EXE", "INP", "RUF003", "S"]
 fixable = ["ALL"]
