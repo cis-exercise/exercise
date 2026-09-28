@@ -18,6 +18,8 @@ spec:
     - containerPort: 5000
       hostPort: 5005
     env:
+    - name: TZ
+      value: Asia/Tokyo
     - name: FLASK_APP
       value: app.py
     - name: FLASK_DEBUG
@@ -32,6 +34,8 @@ spec:
   - name: db
     image: mirror.gcr.io/mariadb:11
     env:
+    - name: TZ
+      value: Asia/Tokyo
     - name: MARIADB_ROOT_PASSWORD
       value: db_root_password
     - name: MARIADB_USER
